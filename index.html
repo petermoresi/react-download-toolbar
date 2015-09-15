@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minimal React Setup</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js" type="text/javascript"></script>
+  <script src="DownloadToolbar.js"></script>
+</head>
+<body>
+  <div id="main">
+  </div>
+  <script>
+  'use strict';
+  React.render(React.createElement(DownloadToolbar, {
+    prefix: 'Download: ',
+    formats: [{ format: 'csv', label: 'CSV' }, { format: 'sql', label: 'SQL' }, { format: 'json', label: 'JSON' }],
+    filename: "myfile",
+    export: function(format) { return 'write your function export: ' + format; }
+  }), document.getElementById('main'));
+  </script>
+</body>
+</html>
