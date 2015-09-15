@@ -4,18 +4,18 @@
   "description": "A React.js component to download a csv, txt or custom file.",
   "main": "DownloadToolbar.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "echo \"NO TESTS\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/petermoresi/react-download.git"
+    "url": "git+https://github.com/petermoresi/react-table-export.git"
   },
   "author": "Peter Moresi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/petermoresi/react-download/issues"
+    "url": "https://github.com/petermoresi/react-table-export/issues"
   },
-  "homepage": "https://github.com/petermoresi/react-download#readme",
+  "homepage": "https://github.com/petermoresi/react-table-export#readme",
   "devDependencies": {
     "babel-core": "^5.8.24"
   }
