@@ -52,10 +52,10 @@
         'span',
         null,
         this.props.prefix,
-        this.props.formats.map(function (d) {
+        this.props.formats.map(function (d, i) {
           return _React['default'].createElement(
             'a',
-            { style: { margin: '5px 5px 0px 0px', textDecoration: 'underline', color: 'blue', cursor: 'pointer' },
+            { key: i, style: { margin: '5px 5px 0px 0px', textDecoration: 'underline', color: 'blue', cursor: 'pointer' },
               download: _this.props.filename + '.' + d.format,
               onClick: _this.handleDownloadClick },
             d.label || d.format

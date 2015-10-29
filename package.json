@@ -1,9 +1,10 @@
 {
   "name": "react-download-toolbar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React.js component to download a csv, txt or custom file.",
   "main": "DownloadToolbar.js",
   "scripts": {
+    "build": "babel DownloadToolbar.es6 -p --stage 0 -m umd --out-file DownloadToolbar.js",
     "test": "echo \"NO TESTS\""
   },
   "repository": {

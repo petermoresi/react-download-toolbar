@@ -31,8 +31,8 @@ export default DownloadToolbar = React.createClass({
     return (
       <span>
         { this.props.prefix }
-        { this.props.formats.map( (d) =>
-          <a style={{ margin: '5px 5px 0px 0px', textDecoration: 'underline', color: 'blue', cursor: 'pointer' }}
+        { this.props.formats.map( (d, i) =>
+          <a key={i} style={{ margin: '5px 5px 0px 0px', textDecoration: 'underline', color: 'blue', cursor: 'pointer' }}
             download={ this.props.filename + '.' + d.format }
             onClick={ this.handleDownloadClick }>{d.label || d.format}</a> ) }
       </span>
