@@ -7,6 +7,9 @@
     "build": "babel DownloadToolbar.es6 -p --stage 0 -m umd --out-file DownloadToolbar.js",
     "test": "echo \"NO TESTS\""
   },
+  "keywords": [
+    "react-component"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/petermoresi/react-download-toolbar.git"
